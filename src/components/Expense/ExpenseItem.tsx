@@ -1,6 +1,6 @@
 import { Expense } from "../../types/types";
 import React, { useContext } from "react";
-import { AppContext } from '/Users/Sara/Desktop/fa24-cse110-lab4-starter-code/src/context/AppContext';
+import { AppContext } from "../../context/AppContext";
 
 const ExpenseItem = (currentExpense: Expense) => {
   // Exercise: Consume the AppContext here
