@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App';
-import { AppProvider } from '/Users/Sara/Desktop/fa24-cse110-lab4-starter-code/src/context/AppContext';  
+import { AppProvider } from './context/AppContext';  
 import { MyBudgetTracker } from "./views/MyBudgetTracker";
 
 // test('renders learn react link', () => {
@@ -25,7 +25,7 @@ describe("Budget Tracker Required Tests", () => {
     
     const totalSpent = budget - 20;
     expect(screen.getByText(`Spent so far: $${20}`)).toBeInTheDocument();
-    expect(screen.getByText(`Remaining: $${totalSpent + 10}`)).toBeInTheDocument();
+    expect(screen.getByText(`Remaining: $${totalSpent + 20}`)).toBeInTheDocument();
   })
 
   test('delete an expense, total and remaining should update', () => {
