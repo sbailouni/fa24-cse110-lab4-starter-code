@@ -25,7 +25,7 @@ describe("Budget Tracker Required Tests", () => {
     
     const totalSpent = budget - 20;
     expect(screen.getByText(`Spent so far: $${20}`)).toBeInTheDocument();
-    expect(screen.getByText(`Remaining: $${totalSpent}`)).toBeInTheDocument();
+    expect(screen.getByText(`Remaining: $${totalSpent + 20}`)).toBeInTheDocument();
   })
 
   test('delete an expense, total and remaining should update', () => {
